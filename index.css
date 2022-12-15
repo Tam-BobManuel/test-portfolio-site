@@ -1,0 +1,237 @@
+        /* CSS variables */
+:root{
+    --navBackground: #e0ebe8;
+    --green: #21564b;
+    --testBorder: 1px solid black;
+    --hundredPercent: 100%;
+    --zeroPercent: 0%;
+    --bodyBackgroundColour: whitesmoke;
+}
+
+        /* body */
+
+body{
+    margin: var(--zeroPercent);
+    padding: var(--zeroPercent);
+    background-color: var(--bodyBackgroundColour);
+}
+
+        /* h1 tag color styled here cause I used that tag multiple times */
+
+h1,h2,h3,h4,h5,h6,p{
+    color: var(--green);
+}
+
+        /* nav bar */
+
+nav{
+    background-color: var(--navBackground);
+    width: var(--hundredPercent) !important;
+    margin-top: var(--zeroPercent);
+    margin-bottom: var(--zeroPercent);
+    overflow: hidden;
+    margin: var(--zeroPercent);
+    padding: var(--zeroPercent);
+    z-index: 2;
+    box-sizing: border-box;
+}
+.nav_image{
+    width: 100px;
+    display: inline-block;
+    margin-left: 5%;
+    padding: 2px;
+    box-sizing: border-box;
+}
+.nav_image > img{
+    width: var(--hundredPercent);
+    object-fit: contain;
+}
+.nav_items{
+    /* width: 70%; */
+    float: right;
+    list-style: none;
+    display: flex;
+    margin-top: 2%;
+    margin-right: 50px;
+    box-sizing: border-box;
+}
+.nav_items > li,.nav2 > li{
+    margin: 0 10px;
+}
+.nav_items > li > h2 > a,.nav2 > li > h4 >a{
+    text-decoration: none;
+    color: var(--green);
+}
+#download{
+    text-decoration: underline;
+}
+
+        /* Mobile nav bar */
+
+#burger{
+    display: none !important;
+}
+#BarDropDiv-Container{
+    display: none;
+}
+.nav2{
+    border: var(--testBorder);
+    width: 200px;
+    list-style: none;
+    float: right;
+    z-index: 3;
+    clear: both;
+    position: fixed;
+    right: 10px;
+    text-align: center;
+    margin: 0 10px;
+    background-color: var(--navBackground);
+    box-sizing: border-box;
+}
+
+.fa:hover{
+    cursor: pointer;
+}
+
+            /* Landing image */
+
+.hillStuff{
+    margin-top: var(--zeroPercent) !important;
+    width: var(--hundredPercent);
+    background-color: var(--navBackground);
+    text-align: center;
+    box-sizing: border-box;
+}
+.hillStuff_heading{
+    width: var(--hundredPercent);
+    box-sizing: border-box;
+}
+.hillStuff_heading > h1{
+    width: var(--hundredPercent);
+    text-align: center;
+}
+.hillStuff_img{
+    width: var(--hundredPercent);
+    box-sizing: border-box;
+}
+.hillStuff_img > img{
+    width: var(--hundredPercent);
+}
+
+            /* About */
+
+#About,#Work,.social{
+    width: var(--hundredPercent);
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px;
+}
+.about_img{
+    width: 200px;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: auto;
+}
+.about_img > img{
+    width: var(--hundredPercent);
+    object-fit: contain;
+}
+
+            /* Work */
+
+.Work_img{
+    display: inline-block;
+}
+.work_text{
+    display: inline-block;
+    padding: 10px;
+}
+.clientSideApp{
+    padding: 10px;
+}
+
+            /* social */
+
+.btn{
+    border-radius: 5px 5px;
+    border: none;
+    padding: 5px;
+    transition: 0.5s;
+}
+.btn:hover{
+    cursor: pointer;
+    padding: 7px;
+    background-color: var(--Neon_Green);
+    /* color: white; */
+}
+.footer-socials{
+    text-align: center;
+    padding-top: 10px;
+}
+.footer-socials > button{
+    padding: 10px;
+    border-radius: 5px;
+    transition: 1s;
+}
+.footer-socials > button:hover{
+    padding: 5px;
+}
+.footer-socials-FB{
+    background-color: #1877F2;
+}
+.footer-socials-Twitter{
+    background-color: #55acee;
+}
+.footer-socials-YT{
+    background-color: #FF0000;
+}
+.footer-socials-Insta{
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+.footer-socials-GitHub{
+    background-color: #171515;
+}
+
+            /* email */
+
+.email{
+    border: var(--testBorder);
+    padding: 5px;
+    display: inline-block;
+    background-color: var(--navBackground);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.email_link{
+    text-decoration: none;
+    color: black !important;
+}
+.email:hover{
+    background-color: transparent;
+}
+
+            /* footer */
+
+footer{
+    padding: 40px;
+    text-align: center;
+    background-color: var(--navBackground);
+}
+
+            /* media queries */
+
+@media (max-width:750px) {
+    #burger{
+        display: block !important;
+    }   
+    .nav_items > li > h2{
+        display: none;
+    }
+    #BarDropDiv-Container.active{
+        display: block;
+    }
+}

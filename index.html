@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="index.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="nav_image">
+            <img src="images/me.svg" alt="">
+        </div>
+        <ul class="nav_items">
+            <li><h2><a href="#About">About</a></h2></li>
+            <li><h2><a href="#Work">Work</a></h2></li>
+            <li><h2><a id="download dl" href="http://drive.google.com/uc?export=download&id=1sz-ncaltRCef2wAWrU0yXSwRURJ_rOrL" download="Resume (1).pdf">Download CV</a></h2></li>
+            <li onclick="burger()">
+                <i class="fa fa-bars" id="burger" style="font-size:36px"></i>
+            </li>
+        </ul>
+        <div class="nav2" id="BarDropDiv-Container">
+            <li><h4><a href="#About">About</a></h4></li>
+            <li><h4><a href="#">Work</a></h4></li>
+            <li>
+                <h4>
+                    <a id="download" href="http://drive.google.com/uc?export=download&id=1sz-ncaltRCef2wAWrU0yXSwRURJ_rOrL" download="Resume (1).pdf">
+                        Download CV
+                    </a>
+                </h4>
+            </li>
+        </div>
+    </nav>
+    
+    <div class="hillStuff">
+        <div class="hillStuff_heading">
+            <h1> I am Tam Bob-manuel</h1>
+            <h4>Web developer and front-end engineer</h4>
+        </div>
+        <div class="hillStuff_img">
+            <img src="images/land.svg" alt="" srcset="">
+        </div>
+    </div>
+    <div id="About">
+        <div class="about_img">
+            <img src="images/me.svg" alt="">
+        </div>
+        <div class="about_text">
+            <h2>About me</h2>
+            <h5>
+                I am a web developer and front-end engineer based in Nigeria, <br>
+                I've always had a passion for creating and manipulating softwares. <br>
+                However, the web is my center piece and I create static and dynamic sites on it.
+            </h5>
+        </div>
+    </div>
+    <div id="Work">
+        <h1>Abilities</h1>
+        <div class="clientSideApp">
+            <div class="work_text">
+                <div class="Work_img">
+                    <img src="data:image/png;base64,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">
+                </div>
+                <h3>Client-side</h3>
+
+                <h5>
+                    As a web developer, <br>
+                    I can code the front-end of your website or web app, <br>
+                    I can also create full blown apps that functions on the client side.
+                </h5>
+            </div>
+        </div>
+        <div class="webSites">
+            <div class="clientSideApp">
+                <div class="work_text">
+                    <div class="Work_img">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAACNElEQVR4nO2avU8CMRjGnyMGnfBj0MWgURx0IXHR+BHd9B/RxU0TJ0cn4+riX6IbCZI4GScWiSbEBSaDC7DgoMXQO+7g3veuB31/U+21zdP69r3jaQHBbhxVyK0flOA4OybFxEipUi7sAUCqW2XP5AFgVxUm9CfV67t4pcRM9uqs5+9Un3bWIAtgWoBpXDlgGBbubzFZ/eDSEopWdgW104vQ/UkRYHryvxreSf0DI0DPml683byQRIRl7XITgL/GoLea5ICgBn4rOEh0xAHl24WUBHVUSFLQt5PXmJxbTrYA52BRJMOoE6xrAZKyr4eBorm7BRzgiUXNCNABiqrs+DUEgNzGYQcAPvePXc8Wiw+swsKia1O6KuVC4PxISbCdmaV0Z6E1PUfqT0qC9fyWq06t/uNUgzJ0D0fNDADvKKRi/WtQPMFulT2TB6L0BNU7OYocwOFXiieoEZkjpP5rnHh98YkjFLUjNAimHSEK1ucA6xeAxRRVmHKExBQlwGqKmnKEKB9I1keA9QvA8h3AkfxMQYqA1tIql47QNJdzpP6kCKidnLvqkv5rUMf6HPDvCP25v7agHGM5Fxikg9/ZgE4SXOHYzgXGAdJbYP71GenvL89nUThCXidR7cwM6vnt0GOSIqDf5OMk3aBpYDkXGEFHSM4FVIF0LpCUuwQUzXJHiG2kEUXuCAU1SMo+90NMUQIspqhpR8iYKSqOkIcjNGpYnwNkAUwLMM1Y3BWmYL0nKNjODzkux4ywCr4BAAAAAElFTkSuQmCC">
+                    </div>
+                    <h3>Server-side</h3>
+    
+                    <h5>
+                        As a web developer, <br>
+                        I am no stranger to working with database<br>
+                        I can also implement APIs into the projects.
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="social">
+        <h1>Reach out</h1>
+        <h5>I am currently available for freelance jobs</h5>
+        <div class="email">
+            <h5><a class="email_link" href="mailto:bglorytb@gmail.com">Message me</a></h5>
+        </div>
+
+        <h1 style="padding-top: 20px;">Socials</h1>
+        <div class="footer-socials">
+            <button class="footer-socials-FB">
+                <a href="https://www.facebook.com/southern.gloryy"><img src="images/facebook.svg" alt="" srcset=""></a>
+            </button>
+            <button class="footer-socials-Twitter">
+                <a href="https://twitter.com/bobmanuel_g"><img src="images/twitter.svg" alt="" srcset=""></a>
+            </button>
+            <button class="footer-socials-YT">
+                <a href="https://www.youtube.com/channel/UCMMb3KUvol_MWN35_tKLsSQ"><img src="images/youtube.svg" alt="" srcset=""></a>
+            </button>
+            <button class="footer-socials-Insta">
+                <a href="https://www.instagram.com/bobmanuel__/"><img src="images/instagram.svg" alt=""></a>
+            </button>
+            <button class="footer-socials-GitHub">
+                <a href="https://github.com/Tam-BobManuel">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"><path fill="currentColor" d="M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9a17.56 17.56 0 0 0 3.8.4c8.3 0 11.5-6.1 11.5-11.4c0-5.5-.2-19.9-.3-39.1a102.4 102.4 0 0 1-22.6 2.7c-43.1 0-52.9-33.5-52.9-33.5c-10.2-26.5-24.9-33.6-24.9-33.6c-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8c11.2 19.6 26.2 25.1 39.6 25.1a63 63 0 0 0 25.6-6c2-14.8 7.8-24.9 14.2-30.7c-49.7-5.8-102-25.5-102-113.5c0-25.1 8.7-45.6 23-61.6c-2.3-5.8-10-29.2 2.2-60.8a18.64 18.64 0 0 1 5-.5c8.1 0 26.4 3.1 56.6 24.1a208.21 208.21 0 0 1 112.2 0c30.2-21 48.5-24.1 56.6-24.1a18.64 18.64 0 0 1 5 .5c12.2 31.6 4.5 55 2.2 60.8c14.3 16.1 23 36.6 23 61.6c0 88.2-52.4 107.6-102.3 113.3c8 7.1 15.2 21.1 15.2 42.5c0 30.7-.3 55.5-.3 63c0 5.4 3.1 11.5 11.4 11.5a19.35 19.35 0 0 0 4-.4C415.9 449.2 480 363.1 480 261.7C480 134.9 379.7 32 256 32Z"/></svg>
+                </a>
+            </button>
+        </div>
+    </div>
+    <footer>
+        <code class="text-dark">Tam 2022</code>
+    </footer>
+</body>
+</html>
